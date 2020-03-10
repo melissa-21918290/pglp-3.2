@@ -3,24 +3,26 @@ package TPjAVA.exo3;
 
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class employe {
 	
       private int salaire=1500;
-      private int annee_courant;
+      private int annee_courante;
       private int annee_entree;
       
       public employe(int salaire,int annee_courant,int annee_entree) {
     	  this.salaire=1500;
-    	  this.annee_courant=annee_courant;
+    	  this.annee_courante=annee_courant;
     	  this.annee_entree=annee_entree;
       }
       
       public int salaire_Emp() {
-    	  if(annee_courant-annee_entree>=1) {
-    		 salaire=salaire+20;
-    	  }
-    	  return salaire;
+    	  Calendar c = Calendar.getInstance();
+  		int annee_courante = c.get(Calendar.YEAR);
+  		return 1500+20*(annee_courante-annee_entree);
+    	  
+    	
       }
       
       private ArrayList employes = new ArrayList();
