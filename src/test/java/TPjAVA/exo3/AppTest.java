@@ -16,7 +16,7 @@ public class AppTest {
 
 	@Test
 	public void testNotNull() {
-		emp = new employe(1700,030,2000);
+		emp = new employe(1700,2030,2000);
 		assertNotNull(emp);
 	}
 	
