@@ -25,13 +25,5 @@ public class employe {
     	
       }
       
-      private ArrayList employes = new ArrayList();
       
-      public int salaire_total() {
-    	  for(int i = 0; i < employes.size(); i++)
-    	  {
-    		  salaire+= (Integer)employes.get(i);
-      }
-	return salaire;
-      }
 }
